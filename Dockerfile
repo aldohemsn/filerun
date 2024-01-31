@@ -11,7 +11,7 @@ ENV FR_DB_HOST=db \
 	LIBVIPS_VERSION="8.14.4" \
 	LIBREOFFICE_VERSION="7.5.5" \
 	PHP_VERSION_SHORT="8.1"
-VOLUME ["/var/www/html", "/user-files"]
+# VOLUME ["/var/www/html", "/user-files"]
 COPY ./filerun /filerun
 RUN apt-get update  \
     && apt-get install -y --no-install-recommends \
